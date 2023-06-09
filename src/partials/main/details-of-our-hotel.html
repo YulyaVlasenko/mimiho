@@ -1,0 +1,165 @@
+<section class="details-of-our-hotel">
+  <div class="container">
+    <p class="logo details-of-our-hotel__logo">MIMIHO</p>
+    <h2 class="details-of-our-hotel__title">Готель</h2>
+    <div class="details-of-our-hotel__text-box">
+      <p class="details-of-our-hotel__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit.
+      </p>
+    </div>
+    <div class="details-of-our-hotel__thumb">
+      <div class="details-of-our-hotel__swiper">
+        <ul class="details-of-our-hotel__list list">
+          <li class="details-of-our-hotel__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper1-desktop-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper1-desktop-2x.jpg 2x
+                "
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper1-tablet-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper1-tablet-2x.jpg 2x
+                "
+                media="(min-width:1024px)"
+              />
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper1-mobile-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper1-mobile-2x.jpg 2x
+                "
+                media="(max-width:1023px)"
+              />
+              <img
+                src="./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper1-mobile-1x.jpg"
+                alt="Двоспальне ліжко"
+                class="details-of-our-hotel__image"
+              />
+            </picture>
+          </li>
+          <li class="details-of-our-hotel__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-desktop-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-desktop-2x.jpg 2x
+                "
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-2x.jpg 2x
+                "
+                media="(min-width:1024px)"
+              />
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-2x.jpg 2x
+                "
+                media="(max-width:1023px)"
+              />
+              <img
+                src="./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper2-tablet-1x.jpg"
+                alt="Яєчня на сніданок"
+                class="details-of-our-hotel__image"
+              />
+            </picture>
+          </li>
+          <li class="details-of-our-hotel__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-desktop-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-desktop-2x.jpg 2x
+                "
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-2x.jpg 2x
+                "
+                media="(min-width:1024px)"
+              />
+              <source
+                srcset="
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-1x.jpg 1x,
+                  ./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-2x.jpg 2x
+                "
+                media="(max-width:1023px)"
+              />
+              <img
+                src="./images/main-page/details-of-our-hotel/homepage-details-of-our-hotel-swiper3-tablet-1x.jpg"
+                alt="Рушник з кремом"
+                class="details-of-our-hotel__image"
+              />
+            </picture>
+          </li>
+        </ul>
+        <div class="details-of-our-hotel__switch">
+          <button type="button" class="btn arrow details-of-our-hotel__left">
+            <svg width="32" height="32"><use href="./images/icons.svg#clic-arrow-left"></use></svg>
+          </button>
+          <button type="button" class="btn arrow details-of-our-hotel__right">
+            <svg width="32" height="32"><use href="./images/icons.svg#clic-arrow-right"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="details-of-our-hotel__buttons">
+        <button
+          type="button"
+          class="btn btn-modal-open btn-modal-open--transparent book-btn js-open-modal wow animate__animated animate__bounce"
+          data-wow-iteration="2"
+          data-modal="2"
+        >
+          Забронювати номер
+        </button>
+        <a
+          href="./hotel.html"
+          class="btn btn-link btn-link--transparent btn-link-mobile link price-btn wow animate__animated animate__bounce"
+          data-wow-iteration="2"
+          data-modal="3"
+          >Переглянути ціни</a
+        >
+      </div>
+    </div>
+  </div>
+  <script>
+    const rw = document.querySelector('.details-of-our-hotel__list').children;
+    const lst_length = rw.length;
+    document.querySelector('.details-of-our-hotel__left').addEventListener('click', muv);
+    function muv() {
+      for (let i = 0; i < lst_length; i++) {
+        if (rw[i].classList == 'details-of-our-hotel__item') {
+          rw[i].classList = 'visually-hidden';
+          if (i == lst_length - 1) {
+            for (let i = 0; i < lst_length; i++) {
+              rw[i].classList = 'details-of-our-hotel__item';
+            }
+          }
+          break;
+        }
+      }
+    }
+    document.querySelector('.details-of-our-hotel__right').onclick = function () {
+      for (let i = 0; i < lst_length; i++) {
+        if (rw[i].classList == 'details-of-our-hotel__item') {
+          if (i == 0) {
+            for (let i = 0; i < lst_length - 1; i++) {
+              rw[i].classList = 'visually-hidden';
+            }
+            break;
+          }
+          rw[i - 1].classList = 'details-of-our-hotel__item';
+          break;
+        }
+      }
+    };
+  </script>
+</section>
